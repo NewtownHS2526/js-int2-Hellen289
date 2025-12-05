@@ -25,7 +25,13 @@ const double = (x) => x * 2;
 // ============================================================================
 
 const scores = [95, 82, 73, 88, 67, 91, 55, 78];
-
+function LetterGrades(score){
+    if(score >= 90) return "A";
+    if(score >= 80) return "B";
+    if(score >= 70) return "C";
+    if(score >= 60) return "D";
+    return "F";
+}
 // Your task:
 // 1. Filter students who scored above 75
 // 2. Map their scores to letter grades (A: 90+, B: 80-89, C: 70-79, D: 60-69, F: <60)
@@ -42,6 +48,8 @@ const scores = [95, 82, 73, 88, 67, 91, 55, 78];
 // Example usage:
 // const double = createMultiplier(2);
 // console.log(double(5)); // Should output 10
+const double = createMultiplier(x*2);
+console.log(double(5));
 
 // Your task:
 // 1. Implement createMultiplier using arrow functions
@@ -49,7 +57,8 @@ const scores = [95, 82, 73, 88, 67, 91, 55, 78];
 // 3. Challenge: Create a 'createCalculator' function that returns an object with four 
 //    arrow function methods: add, subtract, multiply, and divide, all using the initial 
 //    number as one operand
-
+const triple = createMultiplier(x * 3);
+console.log(triple(5))
 // ============================================================================
 // Problem 4: Debugging Arrow Functions
 // The following code has errors. Identify and fix them:

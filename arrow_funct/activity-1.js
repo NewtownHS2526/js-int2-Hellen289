@@ -59,7 +59,7 @@ const finalResult = numbers
 .map(num => num * num)
 .filter(num => num <= 9)
 .reduce((accumulator,currentValue) => accumulator + currentValue, 0)
-console.log("Final result:", finalResult)
+console.log("Final result:", finalResult);
 // ============================================================================
 // Problem 4: Understanding 'this' in Arrow Functions
 // Study the following code and predict the output. Then explain why.
